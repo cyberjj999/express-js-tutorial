@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-    Hello
-    <!-- You need this weird syntax to receive data from the server -->
-    <%= text %>
-</body>
-
+    <body>
+        Receive Data From Server:
+        <br /><br />
+        <!-- You need this weird % syntax below to receive data from the server - remember that text is our variable name we set in server.js -->
+        <%= text %>
+        <br /><br />
+        <!-- If you try to access a variable that isn't defined, i.e. you mistyped text and entered 'texts' instead, you'll get a Reference error -->
+        <!-- To prevent this error, you can use <%= locals.texts %> -->
+        <%= locals.texts %>
+        <!-- Even if 'texts' is not defined, locals is defined by default, so nothing will print out here, but there won't be any error either -->
+        <!-- Alternatively, you can add an alternative value to be displayed if 'texts' isn't defined here-->
+        <%= locals.texts || 'This Will Show If texts Is Undefined' %>
+    </body>
 </html>
