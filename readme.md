@@ -1,40 +1,24 @@
 <!-- ABOUT THE PROJECT -->
 ## 🚀 About The Project 🚀
 
-Quick overview about the project
+A quick ExpressJS Crash Course by 'Web Dev Simplified'
 
 Key Learning Resources
-- YouTube Tutorial 1
-- YouTube Tutorial 2
-- Documentation Link
-- Text-based Tutorial 1
+- https://www.youtube.com/watch?v=SccSCuHhOw0&t=1742s&ab_channel=WebDevSimplified
+- https://github.com/WebDevSimplified/express-crash-course
 
 
 
 ## 🛠️ Built With 🛠️
 
-List any major frameworks/libraries used to bootstrap your project. 
-Leave any add-ons/plugins for the acknowledgements section. 
-
 - ExpressJS
 
 Other NPM Packages
 - Nodemon
-
-
+- ejs
 
 <!-- GETTING STARTED -->
 ## ⚓ Getting Started ⚓
 
-1. Install XXXX
-    ```
-    npm i express
-    ```
-
-2. Specify user variable
-    ```
-    user = 'JJ'
-    ```
-
-3. Start the server
-
+- To start the ExpressJS Server, use `npm run devStart`
+- Navigate to localhost:3000/<different_url> to see different output
